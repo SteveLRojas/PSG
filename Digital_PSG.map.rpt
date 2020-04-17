@@ -1,0 +1,284 @@
+Analysis & Synthesis report for Digital_PSG
+Wed Apr 08 17:55:47 2020
+Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Analysis & Synthesis Source Files Read
+  5. Analysis & Synthesis Resource Usage Summary
+  6. Analysis & Synthesis Resource Utilization by Entity
+  7. Registers Removed During Synthesis
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2008 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                          ;
++-----------------------------+-----------------------------------------+
+; Analysis & Synthesis Status ; Successful - Wed Apr 08 17:55:47 2020   ;
+; Quartus II Version          ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
+; Revision Name               ; Digital_PSG                             ;
+; Top-level Entity Name       ; top_level                               ;
+; Family                      ; MAX II                                  ;
+; Total logic elements        ; 323                                     ;
+; Total pins                  ; 26                                      ;
+; Total virtual pins          ; 0                                       ;
+; UFM blocks                  ; 0 / 1 ( 0 % )                           ;
++-----------------------------+-----------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                            ;
++----------------------------------------------------------------+--------------------+--------------------+
+; Option                                                         ; Setting            ; Default Value      ;
++----------------------------------------------------------------+--------------------+--------------------+
+; Device                                                         ; EPM240T100C5       ;                    ;
+; Top-level entity name                                          ; top_level          ; Digital_PSG        ;
+; Family name                                                    ; MAX II             ; Stratix II         ;
+; Optimization Technique                                         ; Area               ; Balanced           ;
+; Type of Retiming Performed During Resynthesis                  ; Full               ;                    ;
+; Resynthesis Optimization Effort                                ; Normal             ;                    ;
+; Physical Synthesis Level for Resynthesis                       ; Normal             ;                    ;
+; Use Generated Physical Constraints File                        ; On                 ;                    ;
+; Use smart compilation                                          ; Off                ; Off                ;
+; Restructure Multiplexers                                       ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                            ; Off                ; Off                ;
+; Preserve fewer node names                                      ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                      ; Off                ; Off                ;
+; Verilog Version                                                ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                   ; VHDL93             ; VHDL93             ;
+; State Machine Processing                                       ; Auto               ; Auto               ;
+; Safe State Machine                                             ; Off                ; Off                ;
+; Extract Verilog State Machines                                 ; On                 ; On                 ;
+; Extract VHDL State Machines                                    ; On                 ; On                 ;
+; Ignore Verilog initial constructs                              ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                     ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                 ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                        ; On                 ; On                 ;
+; Parallel Synthesis                                             ; Off                ; Off                ;
+; NOT Gate Push-Back                                             ; On                 ; On                 ;
+; Power-Up Don't Care                                            ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                   ; Off                ; Off                ;
+; Remove Duplicate Registers                                     ; On                 ; On                 ;
+; Ignore CARRY Buffers                                           ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                         ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                          ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                      ; Off                ; Off                ;
+; Ignore LCELL Buffers                                           ; Off                ; Off                ;
+; Ignore SOFT Buffers                                            ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                 ; Off                ; Off                ;
+; Carry Chain Length                                             ; 70                 ; 70                 ;
+; Auto Carry Chains                                              ; On                 ; On                 ;
+; Auto Open-Drain Pins                                           ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                          ; Off                ; Off                ;
+; Perform gate-level register retiming                           ; Off                ; Off                ;
+; Allow register retiming to trade off Tsu/Tco with Fmax         ; On                 ; On                 ;
+; Auto Shift Register Replacement                                ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                  ; On                 ; On                 ;
+; Allow Synchronous Control Signals                              ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                         ; Off                ; Off                ;
+; Auto Resource Sharing                                          ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing            ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives              ; Off                ; Off                ;
+; Show Parameter Settings Tables in Synthesis Report             ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                             ; Off                ; Off                ;
+; Synchronization Register Chain Length                          ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                   ; Normal compilation ; Normal compilation ;
+; HDL message level                                              ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report       ; 100                ; 100                ;
+; Number of Inverted Registers Reported in Synthesis Report      ; 100                ; 100                ;
+; Clock MUX Protection                                           ; On                 ; On                 ;
+; Block Design Naming                                            ; Auto               ; Auto               ;
+; Synthesis Effort                                               ; Auto               ; Auto               ;
+; Allows Asynchronous Clear Usage For Shift Register Replacement ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                             ; Medium             ; Medium             ;
++----------------------------------------------------------------+--------------------+--------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                    ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------+
+; toplevel.v                       ; yes             ; User Verilog HDL File  ; D:/Documents and Settings/Win2K/My Documents/PSG/toplevel.v ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Total logic elements                        ; 323   ;
+;     -- Combinational with no register       ; 136   ;
+;     -- Register only                        ; 102   ;
+;     -- Combinational with a register        ; 85    ;
+;                                             ;       ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 56    ;
+;     -- 3 input functions                    ; 89    ;
+;     -- 2 input functions                    ; 68    ;
+;     -- 1 input functions                    ; 8     ;
+;     -- 0 input functions                    ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 213   ;
+;     -- arithmetic mode                      ; 110   ;
+;     -- qfbk mode                            ; 0     ;
+;     -- register cascade mode                ; 0     ;
+;     -- synchronous clear/load mode          ; 26    ;
+;     -- asynchronous clear/load mode         ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 187   ;
+; Total logic cells in carry chains           ; 123   ;
+; I/O pins                                    ; 26    ;
+; Maximum fan-out node                        ; clk   ;
+; Maximum fan-out                             ; 187   ;
+; Total fan-out                               ; 1107  ;
+; Average fan-out                             ; 3.17  ;
++---------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                   ;
++------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------+--------------+
+; Compilation Hierarchy Node   ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                ; Library Name ;
++------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------+--------------+
+; |top_level                   ; 323 (130)   ; 187          ; 0          ; 26   ; 0            ; 136 (50)     ; 102 (80)          ; 85 (0)           ; 123 (0)         ; 0 (0)      ; |top_level                         ; work         ;
+;    |DAC:DAC0_inst|           ; 14 (14)     ; 0            ; 0          ; 0    ; 0            ; 14 (14)      ; 0 (0)             ; 0 (0)            ; 10 (10)         ; 0 (0)      ; |top_level|DAC:DAC0_inst           ; work         ;
+;    |DAC:DAC1_inst|           ; 14 (14)     ; 0            ; 0          ; 0    ; 0            ; 14 (14)      ; 0 (0)             ; 0 (0)            ; 10 (10)         ; 0 (0)      ; |top_level|DAC:DAC1_inst           ; work         ;
+;    |DAC:DAC2_inst|           ; 24 (24)     ; 10           ; 0          ; 0    ; 0            ; 14 (14)      ; 0 (0)             ; 10 (10)          ; 19 (19)         ; 0 (0)      ; |top_level|DAC:DAC2_inst           ; work         ;
+;    |clock_synth:csynth0|     ; 14 (14)     ; 9            ; 0          ; 0    ; 0            ; 5 (5)        ; 1 (1)             ; 8 (8)            ; 8 (8)           ; 0 (0)      ; |top_level|clock_synth:csynth0     ; work         ;
+;    |clock_synth:csynth1|     ; 14 (14)     ; 9            ; 0          ; 0    ; 0            ; 5 (5)        ; 1 (1)             ; 8 (8)            ; 8 (8)           ; 0 (0)      ; |top_level|clock_synth:csynth1     ; work         ;
+;    |clock_synth_low:csynth2| ; 16 (16)     ; 11           ; 0          ; 0    ; 0            ; 5 (5)        ; 1 (1)             ; 10 (10)          ; 10 (10)         ; 0 (0)      ; |top_level|clock_synth_low:csynth2 ; work         ;
+;    |noise_synth:nsynth0|     ; 25 (25)     ; 23           ; 0          ; 0    ; 0            ; 2 (2)        ; 19 (19)           ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |top_level|noise_synth:nsynth0     ; work         ;
+;    |pulse_synth:psynth0|     ; 8 (8)       ; 0            ; 0          ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; 8 (8)           ; 0 (0)      ; |top_level|pulse_synth:psynth0     ; work         ;
+;    |pulse_synth:psynth1|     ; 8 (8)       ; 0            ; 0          ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; 8 (8)           ; 0 (0)      ; |top_level|pulse_synth:psynth1     ; work         ;
+;    |sawtooth_synth:ssynth1|  ; 11 (11)     ; 11           ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 11 (11)          ; 10 (10)         ; 0 (0)      ; |top_level|sawtooth_synth:ssynth1  ; work         ;
+;    |sine_synth:isynth2|      ; 27 (27)     ; 23           ; 0          ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 23 (23)          ; 22 (22)         ; 0 (0)      ; |top_level|sine_synth:isynth2      ; work         ;
+;    |triangle_synth:tsynth0|  ; 18 (18)     ; 11           ; 0          ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 11 (11)          ; 10 (10)         ; 0 (0)      ; |top_level|triangle_synth:tsynth0  ; work         ;
++------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                      ;
++----------------------------------------+------------------------------------------------+
+; Register name                          ; Reason for Removal                             ;
++----------------------------------------+------------------------------------------------+
+; DAC:DAC0_inst|DAC_counter[0]           ; Merged with DAC:DAC2_inst|DAC_counter[0]       ;
+; DAC:DAC1_inst|DAC_counter[0]           ; Merged with DAC:DAC2_inst|DAC_counter[0]       ;
+; DAC:DAC0_inst|DAC_counter[1]           ; Merged with DAC:DAC2_inst|DAC_counter[1]       ;
+; DAC:DAC1_inst|DAC_counter[1]           ; Merged with DAC:DAC2_inst|DAC_counter[1]       ;
+; DAC:DAC0_inst|DAC_counter[2]           ; Merged with DAC:DAC2_inst|DAC_counter[2]       ;
+; DAC:DAC1_inst|DAC_counter[2]           ; Merged with DAC:DAC2_inst|DAC_counter[2]       ;
+; DAC:DAC0_inst|DAC_counter[3]           ; Merged with DAC:DAC2_inst|DAC_counter[3]       ;
+; DAC:DAC1_inst|DAC_counter[3]           ; Merged with DAC:DAC2_inst|DAC_counter[3]       ;
+; DAC:DAC0_inst|DAC_counter[4]           ; Merged with DAC:DAC2_inst|DAC_counter[4]       ;
+; DAC:DAC1_inst|DAC_counter[4]           ; Merged with DAC:DAC2_inst|DAC_counter[4]       ;
+; DAC:DAC0_inst|DAC_counter[5]           ; Merged with DAC:DAC2_inst|DAC_counter[5]       ;
+; DAC:DAC1_inst|DAC_counter[5]           ; Merged with DAC:DAC2_inst|DAC_counter[5]       ;
+; DAC:DAC0_inst|DAC_counter[6]           ; Merged with DAC:DAC2_inst|DAC_counter[6]       ;
+; DAC:DAC1_inst|DAC_counter[6]           ; Merged with DAC:DAC2_inst|DAC_counter[6]       ;
+; DAC:DAC0_inst|DAC_counter[7]           ; Merged with DAC:DAC2_inst|DAC_counter[7]       ;
+; DAC:DAC1_inst|DAC_counter[7]           ; Merged with DAC:DAC2_inst|DAC_counter[7]       ;
+; DAC:DAC0_inst|DAC_counter[8]           ; Merged with DAC:DAC2_inst|DAC_counter[8]       ;
+; DAC:DAC1_inst|DAC_counter[8]           ; Merged with DAC:DAC2_inst|DAC_counter[8]       ;
+; DAC:DAC0_inst|DAC_counter[9]           ; Merged with DAC:DAC2_inst|DAC_counter[9]       ;
+; DAC:DAC1_inst|DAC_counter[9]           ; Merged with DAC:DAC2_inst|DAC_counter[9]       ;
+; noise_synth:nsynth0|cycle_count[0]     ; Merged with triangle_synth:tsynth0|triangle[0] ;
+; Total Number of Removed Registers = 21 ;                                                ;
++----------------------------------------+------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 187   ;
+; Number of registers using Synchronous Clear  ; 26    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 145   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |top_level|Mux8              ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |top_level|active_sample1[5] ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; No         ; |top_level|Mux1              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
+    Info: Processing started: Wed Apr 08 17:55:32 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Digital_PSG -c Digital_PSG
+Info: Found 9 design units, including 9 entities, in source file toplevel.v
+    Info: Found entity 1: top_level
+    Info: Found entity 2: DAC
+    Info: Found entity 3: clock_synth
+    Info: Found entity 4: clock_synth_low
+    Info: Found entity 5: triangle_synth
+    Info: Found entity 6: sawtooth_synth
+    Info: Found entity 7: pulse_synth
+    Info: Found entity 8: noise_synth
+    Info: Found entity 9: sine_synth
+Info: Elaborating entity "top_level" for the top level hierarchy
+Info: Elaborating entity "clock_synth" for hierarchy "clock_synth:csynth0"
+Info: Elaborating entity "DAC" for hierarchy "DAC:DAC0_inst"
+Info: Elaborating entity "triangle_synth" for hierarchy "triangle_synth:tsynth0"
+Info: Elaborating entity "pulse_synth" for hierarchy "pulse_synth:psynth0"
+Info: Elaborating entity "noise_synth" for hierarchy "noise_synth:nsynth0"
+Info: Elaborating entity "sawtooth_synth" for hierarchy "sawtooth_synth:ssynth1"
+Info: Elaborating entity "clock_synth_low" for hierarchy "clock_synth_low:csynth2"
+Info: Elaborating entity "sine_synth" for hierarchy "sine_synth:isynth2"
+Info: Implemented 349 device resources after synthesis - the final resource count might be different
+    Info: Implemented 14 input pins
+    Info: Implemented 12 output pins
+    Info: Implemented 323 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 159 megabytes
+    Info: Processing ended: Wed Apr 08 17:55:47 2020
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:13
+
+

@@ -1,0 +1,380 @@
+Version 8.1 Build 163 10/28/2008 SJ Web Edition
+41
+2669
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+OFF
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+altsyn.lmf
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+top_level
+# storage
+db|Digital_PSG.(0).cnf
+db|Digital_PSG.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+toplevel.v
+d4e581603648d9ba7ef977f23fe7206f
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+|
+}
+# lmf
+..|..|..|..|altera|81|quartus|lmf|altsyn.lmf
+32a512b4b4798678355b65114155d5b6
+# macro_sequence
+
+# end
+# entity
+clock_synth
+# storage
+db|Digital_PSG.(1).cnf
+db|Digital_PSG.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+toplevel.v
+d4e581603648d9ba7ef977f23fe7206f
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+clock_synth:csynth0
+clock_synth:csynth1
+}
+# lmf
+..|..|..|..|altera|81|quartus|lmf|altsyn.lmf
+32a512b4b4798678355b65114155d5b6
+# macro_sequence
+
+# end
+# entity
+DAC
+# storage
+db|Digital_PSG.(2).cnf
+db|Digital_PSG.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+toplevel.v
+d4e581603648d9ba7ef977f23fe7206f
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+DAC:DAC0_inst
+DAC:DAC1_inst
+DAC:DAC2_inst
+}
+# lmf
+..|..|..|..|altera|81|quartus|lmf|altsyn.lmf
+32a512b4b4798678355b65114155d5b6
+# macro_sequence
+
+# end
+# entity
+triangle_synth
+# storage
+db|Digital_PSG.(3).cnf
+db|Digital_PSG.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+toplevel.v
+d4e581603648d9ba7ef977f23fe7206f
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+triangle_synth:tsynth0
+}
+# lmf
+..|..|..|..|altera|81|quartus|lmf|altsyn.lmf
+32a512b4b4798678355b65114155d5b6
+# macro_sequence
+
+# end
+# entity
+pulse_synth
+# storage
+db|Digital_PSG.(4).cnf
+db|Digital_PSG.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+toplevel.v
+d4e581603648d9ba7ef977f23fe7206f
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+pulse_synth:psynth0
+pulse_synth:psynth1
+}
+# lmf
+..|..|..|..|altera|81|quartus|lmf|altsyn.lmf
+32a512b4b4798678355b65114155d5b6
+# macro_sequence
+
+# end
+# entity
+noise_synth
+# storage
+db|Digital_PSG.(5).cnf
+db|Digital_PSG.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+toplevel.v
+d4e581603648d9ba7ef977f23fe7206f
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+noise_synth:nsynth0
+}
+# lmf
+..|..|..|..|altera|81|quartus|lmf|altsyn.lmf
+32a512b4b4798678355b65114155d5b6
+# macro_sequence
+
+# end
+# entity
+sawtooth_synth
+# storage
+db|Digital_PSG.(6).cnf
+db|Digital_PSG.(6).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+toplevel.v
+d4e581603648d9ba7ef977f23fe7206f
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+sawtooth_synth:ssynth1
+}
+# lmf
+..|..|..|..|altera|81|quartus|lmf|altsyn.lmf
+32a512b4b4798678355b65114155d5b6
+# macro_sequence
+
+# end
+# entity
+clock_synth_low
+# storage
+db|Digital_PSG.(7).cnf
+db|Digital_PSG.(7).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+toplevel.v
+d4e581603648d9ba7ef977f23fe7206f
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+clock_synth_low:csynth2
+}
+# lmf
+..|..|..|..|altera|81|quartus|lmf|altsyn.lmf
+32a512b4b4798678355b65114155d5b6
+# macro_sequence
+
+# end
+# entity
+sine_synth
+# storage
+db|Digital_PSG.(8).cnf
+db|Digital_PSG.(8).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+toplevel.v
+d4e581603648d9ba7ef977f23fe7206f
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+sine_synth:isynth2
+}
+# lmf
+..|..|..|..|altera|81|quartus|lmf|altsyn.lmf
+32a512b4b4798678355b65114155d5b6
+# macro_sequence
+
+# end
+# complete
+
